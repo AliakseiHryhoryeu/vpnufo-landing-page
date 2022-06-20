@@ -1,0 +1,33 @@
+.header {
+	&__wrapper {
+		width: 100vw;
+		padding: 30px 0px;
+	}
+	&__container {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+		align-items: center;
+	}
+	&__nav {
+		&__list {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+		}
+		&__link {
+			padding: 0px 0px;
+		}
+		&__item {
+			padding: 0px 67px;
+		}
+	}
+	&__auth {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		&-divider {
+			padding: 0px 5px;
+		}
+	}
+}

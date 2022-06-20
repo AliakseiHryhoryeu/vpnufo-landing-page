@@ -1,0 +1,14 @@
+export interface UserModel {
+	userId: string
+	username: string
+}
+
+export enum UserActionsTypes {
+	SET_USER = 'USER/SET_USER',
+	LOGOUT = 'USER/LOGOUT',
+	SETTINGS_SHOW = 'USER/SETTINGS_SHOW',
+	SETTINGS_HIDE = 'USER/SETTINGS_HIDE',
+	SET_ACTIVE_USERICON = 'USER/SET_ACTIVE_USERICON',
+	ALERT_SHOW = 'USER/ALERT_SHOW',
+	ALERT_HIDE = 'USER/ALERT_HIDE',
+}

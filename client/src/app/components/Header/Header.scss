@@ -1,4 +1,10 @@
 .header {
+	&__logo {
+		color: var(--primaryLight);
+		font-size: var(--h3-fs);
+		font-weight: 900;
+		letter-spacing: 0.1em;
+	}
 	&__wrapper {
 		width: 100vw;
 		padding: 30px 0px;
@@ -15,19 +21,42 @@
 			flex-direction: row;
 			align-items: center;
 		}
-		&__link {
-			padding: 0px 0px;
-		}
+
 		&__item {
 			padding: 0px 67px;
+			color: var(--primaryLight);
+		}
+
+		&__link:active,
+		&__link:hover,
+		&__link {
+			text-decoration: none;
+			color: var(--primaryLight);
+			font-size: var(--h4-fs);
 		}
 	}
 	&__auth {
 		display: flex;
 		flex-direction: row;
 		align-items: center;
-		&-divider {
+
+		&__divider {
 			padding: 0px 5px;
+		}
+
+		&__link:active,
+		&__link:hover,
+		&__link {
+			text-decoration: none;
+			color: var(--primaryLight);
+			font-size: var(--h4-fs);
+		}
+
+		&__join {
+			color: var(--secondaryOrange);
+		}
+		&__login {
+			color: var(--secondaryGray);
 		}
 	}
 }

@@ -1,87 +1,37 @@
 :root {
-	--header-height: 3rem;
+	/* Text colors */
+	--primaryLight: #ffffff;
+	--primaryBlack: #000000;
+	--secondaryGray: #7c7c7c;
+	--secondaryOrange: #fb9f0d;
 
-	/* Background colors */
-	--header-color: hsl(192, 98%, 95%);
-	--landing-section-color: hsl(223, 95%, 96%);
-	--auth-menu-color: hsl(190, 68%, 96%);
-	--auth-color: hsl(184, 60%, 97%);
-	--settings-color: hsl(184, 98%, 100%);
-	--tasklist-color: hsl(192, 100%, 97%);
-	--menulist-color: hsl(184, 100%, 97%);
-
-	--text-color-black: hsl(192, 4%, 15%);
-	--text-color-grey: hsl(192, 4%, 15%);
-	--text-color-grey-light: hsl(192, 6%, 73%);
-	--text-color-light: hsl(192, 0%, 97%);
-
-	--settings-bg-color: hsl(184, 100%, 97%);
-	--settings-bg-shadow-color: hsl(192, 3%, 7%, 70%);
-	--settings-border-img-color: hsl(192, 2%, 16%, 100%);
-
-	--alert-bg-color: hsl(45, 100%, 51%, 90%);
-
-	--page404-bg-color: hsl(192, 100%, 97%);
-
-	--header-bg-username-color: hsl(234, 92%, 33%, 70%);
-	--header-bg-username-color-white: hsl(234, 0, 0, 100%);
-
-	/* buttons settings */
-	--btn-blue-color: hsl(234, 92%, 33%, 70%);
-	--btn-gray-color: hsl(240, 15%, 89%, 70%);
-	--btn-height: 3rem;
-	--btn-border-radius: 1rem;
-	--btn-font-size: 1.1rem;
-
-	/* Badge colors */
-
-	--badge-color-grey: hsl(192, 10%, 81%, 100%);
-	--badge-color-lime: hsl(129, 49%, 81%, 100%);
-	--badge-color-purple: hsl(281, 89%, 65%, 100%);
-	--badge-color-black: hsl(258, 100%, 5%, 100%);
-	--badge-color-red: hsl(0, 100%, 70%, 100%);
-	--badge-color-green: hsl(153, 47%, 49%, 100%);
-	--badge-color-blue: hsl(198, 79%, 66%, 100%);
-	--badge-color-pink: hsl(345, 100%, 87%, 100%);
-
-	/*Fonts and typography start*/
+	/* Fonts */
 	--body-font: 'Poppins', -apple-system, system-ui, sans-serif;
 
-	--big-font-size: 2.5rem;
-	--h1-font-size: 2rem;
-	--h2-font-size: 1.25rem;
-	--h3-font-size: 1.1rem;
-	--normal-font-size: 0.938rem;
-	--small-font-size: 0.813rem;
-	--smaller-font-size: 0.75rem;
+	--h1-fs: 6rem;
+	--h2-fs: 2.25rem;
+	--h3-fs: 1.5rem;
+	--h4-fs: 1.125rem;
+	--h5-fs: 0.875rem;
 
 	@media screen and (min-width: 968px) {
-		--big-font-size: 3.5rem;
-		--h1-font-size: 2.25rem;
-		--h2-font-size: 1.5rem;
-		--h3-font-size: 1.25rem;
-		--normal-font-size: 1rem;
-		--small-font-size: 0.875rem;
-		--smaller-font-size: 0.813rem;
+		--h1-fs: 6rem; // 96px
+		--h2-fs: 2.25rem; // 36px
+		--h3-fs: 1.5rem; // 24px
+		--h4-fs: 1.125rem; // 18px
+		--h5-fs: 0.875rem; // 14px
 	}
 
-	--font-medium: 500;
-	--font-semi-bold: 600;
-	/*Fonts and typography end*/
+	--font-normal: 400;
+	--font-bold: 600;
+	--font-black: 900;
 
-	/* Margenes Bottom */
-	--mb-0-2: 0.2rem;
-	--mb-0-5: 0.5rem;
-	--mb-0-75: 0.75rem;
-	--mb-1: 1rem;
-	--mb-1-5: 1.5rem;
-	--mb-2: 2rem;
-	--mb-2-5: 2.5rem;
-	/* Margenes Bottom */
-	--mside-0-5: 0.5rem;
-	--mside-0-75: 0.75rem;
-	--mside-1: 1rem;
-	--mside-1-5: 1.5rem;
-	--mside-2: 2rem;
-	--mside-2-5: 2.5rem;
+	/* Margenes */
+	--m-0-2: 0.2rem;
+	--m-0-5: 0.5rem;
+	--m-0-75: 0.75rem;
+	--m-1: 1rem;
+	--m-1-5: 1.5rem;
+	--m-2: 2rem;
+	--m-2-5: 2.5rem;
 }

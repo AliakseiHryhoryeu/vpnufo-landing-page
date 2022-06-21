@@ -33,7 +33,7 @@ export const Header: FC = () => {
 							onClick={toggleClassActiveHeaderBurger}
 						></div>
 
-						<Link to='/' className='header__link'>
+						<Link to='/' className='header__logo'>
 							VPNUNFO
 						</Link>
 						<nav
@@ -52,11 +52,17 @@ export const Header: FC = () => {
 							</ul>
 						</nav>
 						<div className='header__auth'>
-							<Link to='/signup' className='header__nav__link'>
+							<Link
+								to='/signup'
+								className='header__auth__link header__auth__login'
+							>
 								Log in
 							</Link>
-							<div className='header__auth-divider'>/</div>
-							<Link to='/auth' className='header__nav__link'>
+							<div className='header__auth__link header__auth__divider'>/</div>
+							<Link
+								to='/auth'
+								className='header__auth__link header__auth__join'
+							>
 								Join
 							</Link>
 						</div>

@@ -1,9 +1,10 @@
-# To-do-list
+# VPN-UFO
 
 #### Frontend
 
 - ReactJS
-- Redux
+- Redux, Redux toolkit
+- Apollo / GraphQL
 - TypeScript
 - SCSS
 - Webpack
@@ -12,9 +13,10 @@
 #### Backend
 
 - ExpressJS
+- GraphQL
 - MongoDB
-- NodeJS
 - JavaScript
+- NodeJS
 
 ## Figma
 
@@ -22,10 +24,6 @@ https://www.figma.com/file/Kis6CkWtqdEGzAx8cLiiid/VPN-ufo?node-id=0%3A1
 
 ## Client
 
-https://to-do-list-client.vercel.app/
-
 ## Server
 
-https://todo-8877.herokuapp.com/
-
-![To-do-list-preview](preview.png)
+![vpnufo-preview](preview.png)

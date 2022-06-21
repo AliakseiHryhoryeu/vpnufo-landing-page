@@ -16,25 +16,37 @@ export const Landing: FC = () => {
 
 	return (
 		<div className='Landing'>
-			<Header />
 			<section className='home'>
+				<Header />
+
 				<div className='home__wrapper'>
-					<div className='home__title'>Manage your tasks</div>
+					<div className='home__title'>VPNUFO</div>
 					<div className='home__subtitle'>
-						To do list enable you to organize and prioritize your projects in a
-						fun, flexible, and rewarding way. Let's started.
+						We are promoting the idea that everyone in the world has the right
+						to completely control their digital life!
 					</div>
-					<div className='home__container'>
-						<Link className='home__button' to='/hiodsgijdjisd'>
-							Get started
-						</Link>
-						<Link className='home__button' to='/main'>
-							Lets see how it work
-						</Link>
+					<Link className='home__button' to='/hiodsgijdjisd'>
+						Get it free
+					</Link>
+				</div>
+			</section>
+			<section className='wewill'>
+				<div className='wewill__wrapper'>
+					<div className='wewill__img'>
+						<img src='' alt='' height={'390px'} width={'390px'} />
+					</div>
+					<div className='wewill__text'>
+						<div className='wewill__title'>
+							We will make your browsing the Internet secure and anonymous.
+						</div>
+						<div className='wewill__subtitle'>
+							Search for information or watch your favorite shows without ads or
+							third party tracking! With Vpnufo, your accounts are completely
+							safe.
+						</div>
 					</div>
 				</div>
 			</section>
-
 			<Footer />
 		</div>
 	)

@@ -5,8 +5,10 @@
 		font-weight: 900;
 		letter-spacing: 0.1em;
 	}
+	&__logo:hover {
+		color: var(--secondaryOrange);
+	}
 	&__wrapper {
-		width: 100vw;
 		padding: 30px 0px;
 	}
 	&__container {
@@ -34,6 +36,9 @@
 			color: var(--primaryLight);
 			font-size: var(--h4-fs);
 		}
+		&__link:hover {
+			color: var(--secondaryOrange);
+		}
 	}
 	&__auth {
 		display: flex;
@@ -42,6 +47,7 @@
 
 		&__divider {
 			padding: 0px 5px;
+			cursor: default;
 		}
 
 		&__link:active,

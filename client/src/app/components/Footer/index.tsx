@@ -5,43 +5,25 @@ import './Footer.scss'
 export const Footer: FC = () => {
 	return (
 		<footer className='footer'>
-			<div className='footer__title'>Contacts</div>
-			<div className='footer__contacts'>
-				<ul className='footer__list'>
-					<li className='footer__item'>
-						<a
-							className='footer__link'
-							href='https://www.linkedin.com/in/aliaksei-hryhoryeu-15a3a6219/'
-						>
-							LinkedIn
-						</a>
-					</li>
-					<li className='footer__item'>
-						<a
-							className='footer__link'
-							href='https://github.com/AliakseiHryhoryeu'
-						>
-							Github
-						</a>
-					</li>
-				</ul>
-				<ul className='footer__list'>
-					<li className='footer__item'>
-						<a
-							className='footer__link'
-							href='mailto:aliaksei.hryhoryeu.1@gmail.com'
-						>
-							aliaksei.hryhoryeu.1@gmail.com
-						</a>
-					</li>
-					<li className='footer__item'>
-						<a className='footer__link' href='tel:+375 29 243 37 59'>
-							+375 29 243 37 59
-						</a>
-					</li>
-				</ul>
+			<div className='footer__wrapper'>
+				<div className='footer__title'>vpnufo</div>
+				<div className='footer__menu'>
+					<div className='footer__menu-group'>
+						<div className='footer__menu-group-item'>What is a VPN?</div>
+						<div className='footer__menu-group-item'>Features</div>
+					</div>
+					<div className='footer__menu-group'>
+						<div className='footer__menu-group-item'>Pricing</div>
+						<div className='footer__menu-group-item'>FAQ</div>
+					</div>
+				</div>
+				<div className='footer__contacts'>
+					<div className='footer__contacts-img'>
+						<img src='' alt='' />
+					</div>
+					<div className='footer__contacts-title'>Contact US</div>
+				</div>
 			</div>
-			<div className='footer__subtitle'>Aliaksei Hryhoryeu 2022</div>
 		</footer>
 	)
 }

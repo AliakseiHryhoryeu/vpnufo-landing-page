@@ -114,26 +114,27 @@ export const Landing: FC = () => {
 			</section>
 
 			<section className='bonuses'>
-				<div className='bonuses__wrapper'></div>
-				<div className='bonuses__block'>
-					<div className='bonuses__title'>24/7 support</div>
-					<div className='bonuses__subtitle'>
-						Our support managers are available 24/7 and are always ready to help
-						you with any question!
+				<div className='bonuses__wrapper'>
+					<div className='bonuses__block'>
+						<div className='bonuses__title'>24/7 support</div>
+						<div className='bonuses__subtitle'>
+							Our support managers are available 24/7 and are always ready to
+							help you with any question!
+						</div>
 					</div>
-				</div>
-				<div className='bonuses__block'>
-					<div className='bonuses__title'>p2p network</div>
-					<div className='bonuses__subtitle'>
-						We use a P2P network, which means that your Internet connection will
-						always be stable and fast
+					<div className='bonuses__block'>
+						<div className='bonuses__title'>p2p network</div>
+						<div className='bonuses__subtitle'>
+							We use a P2P network, which means that your Internet connection
+							will always be stable and fast
+						</div>
 					</div>
-				</div>
-				<div className='bonuses__block'>
-					<div className='bonuses__title'>built-in adblock</div>
-					<div className='bonuses__subtitle'>
-						And the built-in adblock will protect you from unnecessary annoying
-						ads.
+					<div className='bonuses__block'>
+						<div className='bonuses__title'>built-in adblock</div>
+						<div className='bonuses__subtitle'>
+							And the built-in adblock will protect you from unnecessary
+							annoying ads.
+						</div>
 					</div>
 				</div>
 			</section>
@@ -141,45 +142,47 @@ export const Landing: FC = () => {
 			<section className='feedbacks'>
 				<div className='feedbacks__wrapper'>
 					<div className='feedbacks__title'>feedbacks</div>
-					<div className='feedbacks__block'>
-						<div className='feedbacks__block-text'>
-							An excellent service for working with multiple accounts at the
-							same time! I no longer worry that my accounts will be blocked
-						</div>
-						<div className='feedbacks__block-userinfo'>
-							<div className='feedbacks__block-usericon'>
-								<img src='' alt='' />
+					<div className='feedbacks__blocks'>
+						<div className='feedbacks__block'>
+							<div className='feedbacks__block-text'>
+								An excellent service for working with multiple accounts at the
+								same time! I no longer worry that my accounts will be blocked
 							</div>
-							<div className='feedbacks__block-username'>Ufo</div>
-							<div className='feedbacks__block-userdate'>29.12.2289</div>
-						</div>
-					</div>
-					<div className='feedbacks__block'>
-						<div className='feedbacks__block-text'>
-							If not for Vpnufo, my online business would have been blown away a
-							long time ago! Thank you guys, you are helping me earn more.
-						</div>
-						<div className='feedbacks__block-userinfo'>
-							<div className='feedbacks__block-usericon'>
-								<img src='' alt='' />
+							<div className='feedbacks__block-userinfo'>
+								<div className='feedbacks__block-usericon'>
+									<img src='' alt='' />
+								</div>
+								<div className='feedbacks__block-username'>Ufo</div>
+								<div className='feedbacks__block-userdate'>29.12.2289</div>
 							</div>
-							<div className='feedbacks__block-username'>Ufo</div>
-							<div className='feedbacks__block-userdate'>29.12.2289</div>
 						</div>
-					</div>
-					<div className='feedbacks__block'>
-						<div className='feedbacks__block-text'>
-							I live in a country with strict Internet restrictions. Thanks to
-							Vpnufo, I can get in touch with my friends on social networks
-							prohibited in my country, watch films and matches anonymously and
-							at high speed.
-						</div>
-						<div className='feedbacks__block-userinfo'>
-							<div className='feedbacks__block-usericon'>
-								<img src='' alt='' />
+						<div className='feedbacks__block'>
+							<div className='feedbacks__block-text'>
+								If not for Vpnufo, my online business would have been blown away
+								a long time ago! Thank you guys, you are helping me earn more.
 							</div>
-							<div className='feedbacks__block-username'>Ufo</div>
-							<div className='feedbacks__block-userdate'>29.12.2289</div>
+							<div className='feedbacks__block-userinfo'>
+								<div className='feedbacks__block-usericon'>
+									<img src='' alt='' />
+								</div>
+								<div className='feedbacks__block-username'>Ufo</div>
+								<div className='feedbacks__block-userdate'>29.12.2289</div>
+							</div>
+						</div>
+						<div className='feedbacks__block'>
+							<div className='feedbacks__block-text'>
+								I live in a country with strict Internet restrictions. Thanks to
+								Vpnufo, I can get in touch with my friends on social networks
+								prohibited in my country, watch films and matches anonymously
+								and at high speed.
+							</div>
+							<div className='feedbacks__block-userinfo'>
+								<div className='feedbacks__block-usericon'>
+									<img src='' alt='' />
+								</div>
+								<div className='feedbacks__block-username'>Ufo</div>
+								<div className='feedbacks__block-userdate'>29.12.2289</div>
+							</div>
 						</div>
 					</div>
 				</div>

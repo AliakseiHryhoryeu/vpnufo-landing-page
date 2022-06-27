@@ -26,4 +26,4 @@ https://www.figma.com/file/Kis6CkWtqdEGzAx8cLiiid/VPN-ufo?node-id=0%3A1
 
 ## Server
 
-![vpnufo-preview](preview.png)
+![vpnufo-preview](preview.jpg)

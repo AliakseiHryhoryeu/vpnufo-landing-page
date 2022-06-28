@@ -168,6 +168,12 @@
 	justify-content: center;
 	align-items: center;
 
+	background-image: url('assets/img/bonuses_bg.png');
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-position: bottom;
+
 	&__wrapper {
 		display: flex;
 		flex-direction: column;
@@ -214,6 +220,8 @@
 		justify-content: start;
 	}
 	&__block {
+		display: flex;
+		flex-direction: column;
 		width: 330px;
 		height: 100%;
 		border: #000 1px solid;
@@ -224,6 +232,13 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+
+	background-image: url('assets/img/faq_bg.png');
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-position: left;
+
 	&__wrapper {
 		width: 1200px;
 		display: flex;

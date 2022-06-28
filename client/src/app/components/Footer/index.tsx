@@ -2,6 +2,8 @@ import React, { FC } from 'react'
 
 import './Footer.scss'
 
+import footerImg from 'assets/img/footer_ufo.png'
+
 export const Footer: FC = () => {
 	return (
 		<footer className='footer'>
@@ -19,7 +21,7 @@ export const Footer: FC = () => {
 				</div>
 				<div className='footer__contacts'>
 					<div className='footer__contacts-img'>
-						<img src='' alt='' />
+						<img src={footerImg} alt='footer img' />
 					</div>
 					<div className='footer__contacts-title'>Contact US</div>
 				</div>

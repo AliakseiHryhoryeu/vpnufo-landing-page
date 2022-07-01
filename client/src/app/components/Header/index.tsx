@@ -53,14 +53,14 @@ export const Header: FC = () => {
 						</nav>
 						<div className='header__auth'>
 							<Link
-								to='/signup'
+								to='/auth'
 								className='header__auth__link header__auth__login'
 							>
 								Log in
 							</Link>
 							<div className='header__auth__link header__auth__divider'>/</div>
 							<Link
-								to='/auth'
+								to='/signup'
 								className='header__auth__link header__auth__join'
 							>
 								Join

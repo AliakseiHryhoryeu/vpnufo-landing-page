@@ -216,15 +216,19 @@
 	&__blocks {
 		display: flex;
 		flex-direction: row;
+		width: 100%;
 		align-items: flex-start;
-		justify-content: start;
+		justify-content: space-around;
 	}
 	&__block {
 		display: flex;
 		flex-direction: column;
-		width: 330px;
+		width: 290px;
 		height: 100%;
-		border: #000 1px solid;
+		background: #ffffff;
+		box-shadow: 4px 4px 23px rgba(0, 0, 0, 0.1);
+		border-radius: 10px;
+		padding: 30px 20px;
 	}
 }
 

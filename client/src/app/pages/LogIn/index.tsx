@@ -6,11 +6,11 @@ import { useFormik } from 'formik'
 import { Header } from 'app/components'
 import { UserActions } from 'app/actions'
 import { RootState } from 'app/reducers'
-import { LogInSchema } from './validation'
+import { LoginSchema } from './validation'
 
-import './LogIn.scss'
+import './Login.scss'
 
-export const LogIn: FC = () => {
+export const Login: FC = () => {
 	const dispatch = useDispatch()
 	const navigate = useNavigate()
 	const { isAuth } = useSelector((state: RootState) => {
@@ -27,7 +27,7 @@ export const LogIn: FC = () => {
 			username: '',
 			password: '',
 		},
-		validationSchema: LogInSchema,
+		validationSchema: LoginSchema,
 		onSubmit: values => {
 			dispatch(UserActions.LogIn(values.username, values.password))
 			navigate('/main', { replace: true })

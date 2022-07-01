@@ -1,23 +1,13 @@
 import axios from 'axios'
 import { UserActionsTypes } from 'app/models'
 
-import config from 'assets/config.json'
+const serverIp = process.env.SERVER_IP
 
 export namespace UserActions {
-	export enum Type {
-		SET_USER = 'USER/SET_USER',
-		LOGOUT = 'USER/LOGOUT',
-		SETTINGS_SHOW = 'USER/SETTINGS_SHOW',
-		SETTINGS_HIDE = 'USER/SETTINGS_HIDE',
-		SET_ACTIVE_USERICON = 'USER/SET_ACTIVE_USERICON',
-		ALERT_SHOW = 'USER/ALERT_SHOW',
-		ALERT_HIDE = 'USER/ALERT_HIDE',
-	}
-
 	export function auth() {
 		return async dispatch => {
 			try {
-				const response = await axios.get(config.proxy + `api/auth/auth`, {
+				const response = await axios.get(serverIp + `api/auth/auth`, {
 					headers: { Authorization: `Bearer ${localStorage.getItem('token')}` },
 				})
 				dispatch(setUser(response.data.user))
@@ -31,7 +21,7 @@ export namespace UserActions {
 	export function LogIn(username, password) {
 		return async dispatch => {
 			try {
-				const response = await axios.post(config.proxy + `api/auth/login`, {
+				const response = await axios.post(serverIp + `api/auth/login`, {
 					username: username,
 					password: password,
 				})
@@ -45,7 +35,7 @@ export namespace UserActions {
 
 	export async function signUp(username, email, password) {
 		try {
-			const response = await axios.post(config.proxy + `api/auth/signup`, {
+			const response = await axios.post(serverIp + `api/auth/signup`, {
 				username,
 				email,
 				password,
@@ -58,13 +48,13 @@ export namespace UserActions {
 
 	export function setUser(user) {
 		return {
-			type: Type.SET_USER,
+			type: UserActionsTypes.SET_USER,
 			payload: user,
 		}
 	}
 	export function logout() {
 		return {
-			type: Type.LOGOUT,
+			type: UserActionsTypes.LOGOUT,
 		}
 	}
 }

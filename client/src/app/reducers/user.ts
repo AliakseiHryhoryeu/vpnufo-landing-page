@@ -5,6 +5,8 @@ const defaultState: RootState.UserState = {
 	activeUser: {
 		userId: '',
 		username: '',
+		faqId: [],
+		feedbacksId: [],
 	},
 	isAuth: false,
 }

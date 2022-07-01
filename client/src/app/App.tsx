@@ -3,19 +3,21 @@ import { Routes, Route } from 'react-router-dom'
 import { useDispatch } from 'react-redux'
 
 import { UserActions } from 'app/actions'
-import { Landing, Page404 } from 'app/pages'
+import { Landing, Login, Page404, SignUp } from 'app/pages'
 
 function App() {
 	const dispatch = useDispatch()
 
 	useEffect(() => {
-		dispatch(UserActions.auth())
+		UserActions.auth()
 	}, [])
 
 	return (
 		<div className='App'>
 			<Routes>
 				<Route path='/' element={<Landing />} />
+				<Route path='/auth' element={<Login />} />
+				<Route path='/signup' element={<SignUp />} />
 				<Route path='*' element={<Page404 />} />
 			</Routes>
 		</div>

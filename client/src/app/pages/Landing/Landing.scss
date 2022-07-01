@@ -35,6 +35,7 @@
 	}
 
 	&__button {
+		position: relative;
 		align-self: center;
 		justify-self: center;
 		height: 65px;
@@ -47,15 +48,25 @@
 		align-items: center;
 		justify-content: center;
 		text-decoration: none;
+		cursor: pointer;
 
 		color: var(--primaryLight);
 		font-size: var(--h4-fs);
 		font-weight: 700;
 		letter-spacing: 0.1em;
 		text-transform: uppercase;
+
+		&::before {
+			display: block;
+			position: absolute;
+			top: -45px;
+			right: 15px;
+			content: url('assets/img/landing-button-ufo.png');
+		}
 	}
 	&__button:hover {
 		background: linear-gradient(135.29deg, #e4a23b -1.97%, #d78809 100.91%);
+		transform: scale(1.05);
 	}
 }
 
@@ -83,15 +94,37 @@
 
 .features {
 	padding-bottom: 240px;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+	background-image: url('assets/img/features-bg-003.png');
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-position: bottom;
 	&__wrapper {
 		display: flex;
 		flex-direction: row;
-		justify-content: center;
+		justify-content: space-around;
 		align-items: center;
+		min-width: 1000px;
+		&-right {
+			justify-content: end;
+			padding-top: 120px;
+		}
 	}
 	&__title {
 		font-size: var(--h2-fs);
 		text-transform: uppercase;
+		margin-bottom: 20px;
+	}
+	&__text {
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 150%;
 	}
 	&__subtitle {
 		font-size: var(--h4-fs);
@@ -112,12 +145,34 @@
 			color: var(--secondaryOrange);
 		}
 	}
+	&::before {
+		content: url('assets/img/questions-bg-0002.png');
+		position: absolute;
+		display: block;
+		top: 0;
+		left: 0;
+	}
 }
 
 .plan {
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	position: relative;
+	&::before {
+		display: block;
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		content: url('assets/img/Landing-questions-bg-r-1.png');
+	}
+	&__surfer {
+		position: absolute;
+		bottom: 110px;
+		right: calc(20vw);
+		z-index: -1;
+	}
 	&__wrapper {
 		display: flex;
 		flex-direction: column;
@@ -201,6 +256,7 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	padding-bottom: 40px;
 	&__wrapper {
 		width: 1130px;
 		display: flex;
@@ -214,17 +270,20 @@
 		padding-bottom: 40px;
 	}
 	&__blocks {
-		display: flex;
-		flex-direction: row;
-		align-items: flex-start;
-		justify-content: start;
+		display: grid;
+		gap: 60px;
+		grid-template-columns: auto auto auto;
+		width: 100%;
 	}
 	&__block {
 		display: flex;
 		flex-direction: column;
-		width: 330px;
-		height: 100%;
-		border: #000 1px solid;
+		justify-content: space-between;
+		width: 290px;
+		background: #ffffff;
+		box-shadow: 4px 4px 23px rgba(0, 0, 0, 0.1);
+		border-radius: 10px;
+		padding: 30px 20px;
 	}
 }
 
@@ -232,7 +291,7 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-
+	padding-top: 100px;
 	background-image: url('assets/img/faq_bg.png');
 	background-color: transparent;
 	background-repeat: no-repeat;

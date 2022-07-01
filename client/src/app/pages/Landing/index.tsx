@@ -10,6 +10,7 @@ import './Landing.scss'
 import wewill_img from 'assets/img/wewill-bg1.png'
 import features_img1 from 'assets/img/features-bg-1.png'
 import features_img2 from 'assets/img/features-bg-2.png'
+import plan_surfer_img from 'assets/img/plan-surfer.png'
 
 export const Landing: FC = () => {
 	const { isAuth } = useSelector((state: RootState) => {
@@ -28,7 +29,7 @@ export const Landing: FC = () => {
 						We are promoting the idea that everyone in the world has the right
 						to completely control their digital life!
 					</div>
-					<Link className='home__button' to='/hiodsgijdjisd'>
+					<Link className='home__button' to='/'>
 						Get it free
 					</Link>
 				</div>
@@ -78,16 +79,7 @@ export const Landing: FC = () => {
 						/>
 					</div>
 				</div>
-				<div className='features__wrapper'>
-					<div className='features__img'>
-						<img
-							src={features_img2}
-							alt='wewill__img'
-							height={'238px'}
-							width={'524px'}
-						/>
-					</div>
-
+				<div className='features__wrapper features__wrapper-right'>
 					<div className='features__text'>
 						<div className='features__subtitle'>
 							We have created a unique work system for Vpnufo. Our users connect
@@ -111,6 +103,13 @@ export const Landing: FC = () => {
 					</div>
 					<div className='plan__button'>Get it free</div>
 				</div>
+				<img
+					className='plan__surfer'
+					src={plan_surfer_img}
+					alt='surfer img'
+					height={'407px'}
+					width={'640px'}
+				/>
 			</section>
 
 			<section className='bonuses'>

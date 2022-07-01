@@ -1,9 +1,12 @@
 import axios from 'axios'
-import { UserActionsTypes } from 'app/models'
 
 const serverIp = process.env.SERVER_IP
 
 export namespace UserActions {
+	export enum Type {
+		SET_USER = 'USER/SET_USER',
+		LOGOUT = 'USER/LOGOUT',
+	}
 	export function auth() {
 		return async dispatch => {
 			try {
@@ -18,7 +21,7 @@ export namespace UserActions {
 		}
 	}
 
-	export function LogIn(username, password) {
+	export function LogIn(username: string, password: string) {
 		return async dispatch => {
 			try {
 				const response = await axios.post(serverIp + `api/auth/login`, {
@@ -48,13 +51,13 @@ export namespace UserActions {
 
 	export function setUser(user) {
 		return {
-			type: UserActionsTypes.SET_USER,
+			type: Type.SET_USER,
 			payload: user,
 		}
 	}
 	export function logout() {
 		return {
-			type: UserActionsTypes.LOGOUT,
+			type: Type.LOGOUT,
 		}
 	}
 }

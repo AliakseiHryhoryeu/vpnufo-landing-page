@@ -2,7 +2,14 @@ import { RootState } from './state'
 import { FaqActionsTypes } from 'app/models'
 
 const defaultState: RootState.FaqState = {
-	faqPosts: [],
+	faqPosts: [
+		{
+			_id: '',
+			title: '',
+			text: '',
+			userId: '',
+		},
+	],
 }
 
 export const faqReducer = (state = defaultState, action) => {

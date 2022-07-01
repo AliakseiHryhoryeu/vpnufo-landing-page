@@ -18,5 +18,7 @@ export namespace RootState {
 
 export interface RootState {
 	user: RootState.UserState
+	faq: RootState.FaqState
+	feedback: RootState.FeedbackState
 	router?: any
 }

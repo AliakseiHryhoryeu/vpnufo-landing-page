@@ -3,7 +3,7 @@ import { Routes, Route } from 'react-router-dom'
 import { useDispatch } from 'react-redux'
 
 import { UserActions } from 'app/actions'
-import { Landing, Login, Page404, SignUp } from 'app/pages'
+import { Landing, Login, Page404, SignUp, PasswordReset } from 'app/pages'
 
 function App() {
 	const dispatch = useDispatch()
@@ -18,6 +18,7 @@ function App() {
 				<Route path='/' element={<Landing />} />
 				<Route path='/auth' element={<Login />} />
 				<Route path='/signup' element={<SignUp />} />
+				<Route path='/password-reset' element={<PasswordReset />} />
 				<Route path='*' element={<Page404 />} />
 			</Routes>
 		</div>

@@ -31,7 +31,9 @@ export const Header: FC = () => {
 								'header__burger-active': isActiveHeaderBurger,
 							})}
 							onClick={toggleClassActiveHeaderBurger}
-						></div>
+						>
+							<span></span>
+						</div>
 
 						<Link to='/' className='header__logo'>
 							VPNUNFO

@@ -1,4 +1,19 @@
 .header {
+	position: relative;
+	top: 0;
+	left: 0;
+	z-index: 50;
+	width: 100%;
+	min-height: 50px;
+
+	&:before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
 	&__logo {
 		color: var(--primaryLight);
 		font-size: var(--h3-fs);
@@ -25,6 +40,9 @@
 		flex-direction: row;
 		justify-content: space-evenly;
 		align-items: center;
+		position: relative;
+		z-index: 2;
+		min-height: 50px;
 	}
 	&__nav {
 		&__list {
@@ -34,7 +52,7 @@
 		}
 
 		&__item {
-			padding: 0px 67px;
+			padding: 0px 60px;
 			color: var(--primaryLight);
 		}
 
@@ -72,6 +90,111 @@
 		}
 		&__login {
 			color: var(--secondaryGray);
+		}
+	}
+}
+@keyframes scale-display-settings {
+	0% {
+		opacity: 0;
+		transform: scale(0);
+		-webkit-transform: scale(0);
+	}
+
+	100% {
+		opacity: 1;
+		transform: scale(1);
+		-webkit-transform: scale(1);
+	}
+}
+@media (max-width: 1600px) {
+	.header {
+		&__nav {
+			&__item {
+				padding: 0px 40px;
+			}
+		}
+	}
+}
+
+@media (max-width: 1200px) {
+	.header {
+		&__nav {
+			&__item {
+				padding: 0px 20px;
+			}
+		}
+	}
+}
+
+@media (max-width: 990px) {
+	.header {
+		&__nav {
+			position: fixed;
+			top: -300%;
+			left: 0;
+			width: 60%;
+			height: 100%;
+			margin-top: 50px;
+			background-color: #3d234c;
+			border-radius: 0px 10px 10px 0px;
+			display: block;
+			overflow: auto;
+			&-active {
+				top: -50px;
+			}
+			&__list {
+				flex-direction: column;
+			}
+		}
+		&__auth {
+			position: absolute;
+			right: 30px;
+		}
+		&__burger {
+			display: block;
+			position: absolute;
+			left: 30px;
+			width: 60px;
+			height: 40px;
+			z-index: 400;
+			span {
+				position: absolute;
+				background-color: #c15cff;
+				left: 0;
+				width: 100%;
+				height: 2px;
+				top: 20px;
+				transition: all 0.3s ease 0s;
+			}
+			&:after,
+			&:before {
+				content: '';
+				background-color: #c15cff;
+				position: absolute;
+				width: 100%;
+				height: 2px;
+				left: 0;
+				transition: all 0.3s ease 0s;
+			}
+			&:after {
+				bottom: 0;
+			}
+			&:before {
+				top: 0;
+			}
+			&.header__burger-active {
+				&:before {
+					transform: rotate(45deg);
+					top: 19.5px;
+				}
+				&:after {
+					transform: rotate(-45deg);
+					bottom: 19.5px;
+				}
+				span {
+					transform: scale(0);
+				}
+			}
 		}
 	}
 }

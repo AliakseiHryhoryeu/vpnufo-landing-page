@@ -1,30 +1,95 @@
 .page404 {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	min-height: 100vh;
 
-    &__main {
-        display: flex;
-        justify-content: center;
-        align-content: center;
-        flex-grow: 4;
-        background: var(--page404-bg-color);
+	background-image: url('assets/img/signup-bg.jpg');
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: bottom;
 
-    }
-    &__text {
-        display: flex;
-        justify-content: center;
-        align-content: center;
-        flex-direction: column;
-        text-align: center;
-        font-weight: 400;
-        font-size: var(--h1-font-size);
+	&__header {
+		position: relative;
+		margin-top: 46px;
+		display: flex;
+		flex-direction: column;
+		justify-content: end;
+		align-items: flex-end;
+		a {
+			color: var(--primaryLight);
+			font-weight: 900;
+			font-size: 24px;
+			line-height: 36px;
+			letter-spacing: 0.1em;
+			text-transform: uppercase;
+			cursor: pointer;
+			&::before {
+				content: url('assets/img/title-ufo.png');
 
-        span {
-            font-weight: 600;
-            font-size: var(--big-font-size);
-        }
-    }
+				position: absolute;
+				display: block;
+				top: -13px;
+				right: 0;
+			}
+			&:hover {
+				color: var(--secondaryOrange);
+				transform: scale(1.05);
+			}
+		}
+	}
+	&__title {
+		color: var(--secondaryOrange);
+		text-align: center;
+		letter-spacing: 0.2em;
+		font-weight: 700;
+		font-size: 150px;
+		line-height: 225px;
+		margin-top: 100px;
+	}
+	&__subtitle {
+		color: var(--primaryLight);
+		max-width: 750px;
+		text-align: center;
+		font-weight: 400;
+		letter-spacing: 0.05em;
+		margin-bottom: 20px;
+
+		&-main {
+			font-size: 58px;
+		}
+		&-secondary {
+			font-size: 36px;
+		}
+	}
+	&__wrapper {
+		min-width: 582px;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&__button {
+		align-self: center;
+		background: linear-gradient(135.29deg, #ebc07d -1.97%, #ce7e00 100.91%);
+
+		padding: 11px 50px;
+		border-radius: 20px;
+
+		color: var(--primaryLight);
+		letter-spacing: 0.1em;
+		cursor: pointer;
+
+		font-weight: 700;
+		font-size: 18px;
+		line-height: 27px;
+		text-align: center;
+		letter-spacing: 0.1em;
+		text-transform: uppercase;
+		&:hover {
+			background: linear-gradient(135.29deg, #e4a23b -1.97%, #d78809 100.91%);
+			transform: scale(1.05);
+		}
+	}
 }

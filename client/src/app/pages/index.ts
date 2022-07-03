@@ -3,4 +3,4 @@ export { Page404 } from './Page404'
 
 export { Login } from './Login'
 export { SignUp } from './SignUp'
-export { RestorePassword } from './RestorePassword'
+export { PasswordReset } from './PasswordReset'

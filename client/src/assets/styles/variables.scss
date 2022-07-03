@@ -8,20 +8,27 @@
 	/* Fonts */
 	--body-font: 'Poppins', -apple-system, system-ui, sans-serif;
 
-	--h1-fs: 6rem;
-	--h2-fs: 2.25rem;
-	--h3-fs: 1.5rem;
-	--h4-fs: 1.125rem;
-	--h5-fs: 0.875rem;
+	--h1-fs: 6rem; // 96px
+	--h2-fs: 2.25rem; // 36px
+	--h3-fs: 1.5rem; // 24px
+	--h4-fs: 1.125rem; // 18px
+	--h5-fs: 0.875rem; // 14px
 
-	@media screen and (min-width: 968px) {
-		--h1-fs: 6rem; // 96px
-		--h2-fs: 2.25rem; // 36px
-		--h3-fs: 1.5rem; // 24px
-		--h4-fs: 1.125rem; // 18px
-		--h5-fs: 0.875rem; // 14px
+	@media screen and (max-width: 990px) {
+		--h1-fs: 4rem; // 64px (96px)
+		--h2-fs: 2rem; // 32px (36px)
+		--h3-fs: 1.25rem; // 20px (24px)
+		--h4-fs: 1rem; //16px (18px)
+		--h5-fs: 0.75; //12px (14px)
 	}
 
+	@media screen and (max-width: 500px) {
+		--h1-fs: 2.875rem; // 64px
+		--h2-fs: 2rem; // 32px
+		--h3-fs: 1.25rem; // 20px
+		--h4-fs: 1rem; //16px
+		--h5-fs: 0.75; //12px
+	}
 	--font-normal: 400;
 	--font-bold: 600;
 	--font-black: 900;

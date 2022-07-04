@@ -37,7 +37,7 @@ export const SignUp: FC = () => {
 		},
 		validationSchema: signUpSchema,
 		onSubmit: values => {
-			UserActions.signUp(values.email, values.password, values.username)
+			UserActions.signUp(values.username, values.email, values.password)
 		},
 	})
 	return (

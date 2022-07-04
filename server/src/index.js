@@ -1,12 +1,13 @@
 const express = require('express')
 const mongoose = require('mongoose')
-const config = require('./config.json')
 const authRouter = require('./routes/auth.routes')
 const faqRouter = require('./routes/faq.routes')
 const feedbackRouter = require('./routes/feedbacks.routes')
 const infoRouter = require('./routes/info.routes')
+require('dotenv').config()
 const app = express()
-const PORT = process.env.PORT || process.env.SERVER_PORT
+// const PORT = process.env.PORT || process.env.SERVER_PORT
+const PORT = 3000
 const DB_URL = process.env.DB_URL
 const cors = require('cors')
 
@@ -28,9 +29,13 @@ const start = async () => {
 			}
 
 		app.listen(PORT, () => {
+			const p = process.env
 			console.log('Server started on port ', PORT)
 		})
-	} catch (e) {}
+	} catch (e) {
+		console.log(e)
+		console.log('db url = ', DB_URL)
+	}
 }
 
 start()

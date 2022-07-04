@@ -1,7 +1,7 @@
 import * as Yup from 'yup'
 
 export const LoginSchema = Yup.object({
-	username: Yup.string()
+	usernameOrEmail: Yup.string()
 		.min(2, 'Must be 2 characters at minimum')
 		.max(20, 'Must be 20 characters or less')
 		.matches(/^[a-zA-Z0-9_]+$/, 'Invalid characters in username')

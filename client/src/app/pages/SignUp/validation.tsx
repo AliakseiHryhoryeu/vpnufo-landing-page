@@ -11,7 +11,7 @@ export const signUpSchema = Yup.object({
 		.min(6, 'Must be 6 characters at minimum')
 		.max(20, 'Must be 20 characters or less')
 		.required('Required'),
-	repeatPassword: Yup.string()
+	confirmPassword: Yup.string()
 		.min(6, 'Must be 6 characters at minimum')
 		.max(20, 'Must be 20 characters or less')
 		.required('Required')

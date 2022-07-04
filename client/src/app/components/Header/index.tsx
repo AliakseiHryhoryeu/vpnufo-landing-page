@@ -15,6 +15,14 @@ export const Header: FC = () => {
 		setActiveHeaderBurger(!isActiveHeaderBurger)
 	}
 
+	const dispatch = useDispatch()
+	const { isAuth, username } = useSelector((state: RootState) => {
+		return {
+			isAuth: state.user.isAuth,
+			username: state.user.activeUser.username,
+		}
+	})
+
 	const navItems = [
 		{ id: 1, title: 'What is a VPN?', url: '/' },
 		{ id: 2, title: 'Features', url: '/' },
@@ -53,21 +61,36 @@ export const Header: FC = () => {
 								))}
 							</ul>
 						</nav>
-						<div className='header__auth'>
-							<Link
-								to='/auth'
-								className='header__auth__link header__auth__login'
-							>
-								Log in
-							</Link>
-							<div className='header__auth__link header__auth__divider'>/</div>
-							<Link
-								to='/signup'
-								className='header__auth__link header__auth__join'
-							>
-								Join
-							</Link>
-						</div>
+
+						{!isAuth && (
+							<div className='header__auth'>
+								<Link
+									to='/auth'
+									className='header__auth__link header__auth__login'
+								>
+									Log in
+								</Link>
+								<div className='header__auth__link header__auth__divider'>
+									/
+								</div>
+								<Link
+									to='/signup'
+									className='header__auth__link header__auth__join'
+								>
+									Join
+								</Link>
+							</div>
+						)}
+						{isAuth && (
+							<div className='header__auth'>
+								<Link
+									to='/settings'
+									className='header__auth__link header__auth__join'
+								>
+									Hello {username}
+								</Link>
+							</div>
+						)}
 					</div>
 				</header>
 			</header>

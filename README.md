@@ -1,10 +1,17 @@
 # VPN-UFO
 
+### Проект будет готоа 04.07.2022 - 05.07.2022, сейчас изучаю redux toolkit из за проблем с dispath(), Осталось доделать
+
+- redux -> redux toolkit
+- адаптив login, signup, restore-pass pages
+- додолать авторизацию
+- вывод постов с сервера
+- изменение постов
+
 #### Frontend
 
 - ReactJS
-- Redux, Redux toolkit
-- Apollo / GraphQL
+- Redux
 - TypeScript
 - SCSS
 - Webpack
@@ -13,7 +20,6 @@
 #### Backend
 
 - ExpressJS
-- GraphQL
 - MongoDB
 - JavaScript
 - NodeJS

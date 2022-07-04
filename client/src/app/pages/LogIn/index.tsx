@@ -3,7 +3,6 @@ import { Link, useNavigate } from 'react-router-dom'
 import { useDispatch, useSelector } from 'react-redux'
 import { useFormik } from 'formik'
 
-import { Header } from 'app/components'
 import { UserActions } from 'app/actions'
 import { RootState } from 'app/reducers'
 import { LoginSchema } from './validation'
@@ -28,15 +27,14 @@ export const Login: FC = () => {
 
 	const formik = useFormik({
 		initialValues: {
-			usernameOrEmail: '',
+			username: '',
 			password: '',
 			remember: '',
 		},
 		validationSchema: LoginSchema,
 		onSubmit: values => {
 			// dispatch(UserActions.LogIn(values.username, values.password))
-			UserActions.LogIn(values.usernameOrEmail, values.password)
-			navigate('/main', { replace: true })
+			UserActions.LogIn(values.username, values.password)
 		},
 	})
 	return (
@@ -78,11 +76,11 @@ export const Login: FC = () => {
 						<input
 							className='login__form-input'
 							placeholder='Email address or username.'
-							name='text'
+							name='username'
 							type='text'
 							onChange={formik.handleChange}
 							onBlur={formik.handleBlur}
-							value={formik.values.usernameOrEmail}
+							value={formik.values.username}
 						/>
 					</div>
 					<div className='login__form-wrapper'>

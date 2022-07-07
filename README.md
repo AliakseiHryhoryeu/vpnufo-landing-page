@@ -1,6 +1,6 @@
 # VPN-UFO
 
-### Проект будет готоа 04.07.2022 - 05.07.2022, сейчас изучаю redux toolkit из за проблем с dispath(), Осталось доделать
+### Осталось доделать, начну делать 08.07.2022
 
 - redux -> redux toolkit
 - адаптив login, signup, restore-pass pages

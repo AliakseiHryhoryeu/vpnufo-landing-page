@@ -1,13 +1,5 @@
 # VPN-UFO
 
-### Осталось доделать, начну делать 08.07.2022
-
-- redux -> redux toolkit
-- адаптив login, signup, restore-pass pages
-- додолать авторизацию
-- вывод постов с сервера
-- изменение постов
-
 #### Frontend
 
 - ReactJS

@@ -3,9 +3,9 @@ import { Link, useNavigate } from 'react-router-dom'
 import { useSelector } from 'react-redux'
 import { useFormik } from 'formik'
 
-import { UserActions } from 'app/actions'
+import { UserActions } from 'app/store/actions'
 import { Header } from 'app/components'
-import { RootState } from 'app/reducers'
+import { RootState } from 'app/store/reducers'
 import { signUpSchema } from './validation'
 
 import facebookIcon from 'assets/img/facebook-icon-signup.svg'

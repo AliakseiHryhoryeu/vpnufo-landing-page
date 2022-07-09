@@ -1,4 +1,4 @@
-import { RootState } from './state'
+import { RootState } from '../state'
 import { FeedbackActionsTypes } from 'app/models'
 
 const defaultState: RootState.FeedbackState = {

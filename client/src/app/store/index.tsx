@@ -1,8 +1,8 @@
 import { combineReducers } from 'redux'
 import { RootState } from './state'
-import { userReducer } from './user'
-import { faqReducer } from './faq'
-import { feedbackReducer } from './feedback'
+import { userReducer } from './user/user.reducer'
+import { faqReducer } from './faq/faq.slice'
+import { feedbackReducer } from './feedback/feedback.reducer'
 
 export { type RootState }
 

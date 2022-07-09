@@ -1,4 +1,4 @@
-import { RootState } from './state'
+import { RootState } from '../state'
 import { UserActionsTypes } from 'app/models'
 
 const defaultState: RootState.UserState = {

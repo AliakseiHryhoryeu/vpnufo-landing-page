@@ -2,7 +2,7 @@ import React, { FC } from 'react'
 import { Link } from 'react-router-dom'
 import { useSelector } from 'react-redux'
 
-import { RootState } from 'app/reducers'
+import { RootState } from 'app/store/reducers'
 import { Header, Footer } from 'app/components'
 
 import './Landing.scss'

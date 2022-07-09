@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom'
 import { useDispatch, useSelector } from 'react-redux'
 import classNames from 'classnames'
 
-import { UserActions } from 'app/actions'
-import { RootState } from 'app/reducers'
+import { UserActions } from 'app/store/actions'
+import { RootState } from 'app/store/reducers'
 
 import './Header.scss'
 

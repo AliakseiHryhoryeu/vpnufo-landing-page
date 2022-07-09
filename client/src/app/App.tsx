@@ -2,7 +2,7 @@ import React, { useEffect } from 'react'
 import { Routes, Route } from 'react-router-dom'
 import { useDispatch } from 'react-redux'
 
-import { UserActions } from 'app/actions'
+import { UserActions } from 'app/store/actions'
 import { Landing, Login, Page404, SignUp, PasswordReset } from 'app/pages'
 
 function App() {

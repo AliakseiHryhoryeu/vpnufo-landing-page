@@ -6,7 +6,7 @@ import { Dispatch, bindActionCreators } from 'redux'
 import axios from 'axios'
 
 const serverIp = process.env.SERVER_IP
-const baseUrl = serverIp + 'api/lists/'
+const baseUrl = serverIp + 'api/faq/'
 
 export const faqApi = createApi({
 	reducerPath: 'faqApi',
@@ -16,8 +16,11 @@ export const faqApi = createApi({
 			query: () => `getFaq`,
 		}),
 		addFaq: build.query<IFAQ[], string>({
-			query: (title: string = '', text: string = '', userId: string = '') =>
-				`getFaq?title=${title}&text=${text}&userId=${userId}`,
+			query: (title: string = '', text: string = '', userId: string = '') => ({
+				url: `/posts`,
+				method: 'POST',
+				body: { title, text, userId },
+			}),
 		}),
 		editFaq: build.query<IFAQ[], string>({
 			query: (faqId: string = '', title: string = '', text: string = '') =>

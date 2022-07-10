@@ -31,7 +31,8 @@ export const faqSlice = createSlice({
 	},
 })
 
-export default faqSlice.reducer
+export const faqReducer = faqSlice.reducer
+export const faqActions = faqSlice.actions
 
 // export const faqReducer = (state = initialState, action) => {
 // 	let index

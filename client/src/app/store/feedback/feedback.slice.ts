@@ -35,6 +35,9 @@ export const feedbackSlice = createSlice({
 
 export default feedbackSlice.reducer
 
+export const feedbackReducer = feedbackSlice.reducer
+export const feedbackActions = feedbackSlice.actions
+
 // case FeedbackActionsTypes.ADD_FEEDBACK:
 // 	return {
 // 		...state,

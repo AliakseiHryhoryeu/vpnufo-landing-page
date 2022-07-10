@@ -66,7 +66,6 @@ router.put(
 		check('feedbackId', 'Uncorrect feedbackId').isLength({ min: 1 }),
 		check('title', 'Uncorrect title').isLength({ min: 1 }),
 		check('text', 'Uncorrect text').isLength({ min: 1 }),
-		check('username', 'Uncorrect username').isLength({ min: 1 }),
 	],
 	async (req, res) => {
 		try {
@@ -74,7 +73,7 @@ router.put(
 			if (!errors.isEmpty()) {
 				return res.status(400).json({ message: 'Uncorrect request', errors })
 			}
-			const { feedbackId, title, text, username } = req.body
+			const { feedbackId, title, text } = req.body
 
 			const feedback = await Feedback.findOne({
 				_id: mongoose.Types.ObjectId(feedbackId),
@@ -84,7 +83,6 @@ router.put(
 			}
 			feedback.title = title
 			feedback.text = text
-			feedback.username = username
 
 			await feedback.save()
 

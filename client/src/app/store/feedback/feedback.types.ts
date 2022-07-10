@@ -1,4 +1,4 @@
-export interface FeedbackModel {
+export interface IFeedback {
 	_id: string
 	title: string
 	text: string
@@ -6,10 +6,6 @@ export interface FeedbackModel {
 	date: string
 	userId: string
 }
-
-export enum FeedbackActionsTypes {
-	GET_FEEDBACK = 'FEEDBACK/GET_FEEDBACK',
-	ADD_FEEDBACK = 'FEEDBACK/ADD_FEEDBACK',
-	EDIT_FEEDBACK = 'FEEDBACK/EDIT_FEEDBACK',
-	DELETE_FEEDBACK = 'FEEDBACK/DELETE_FEEDBACK',
+export interface IFeedbackState {
+	feedbackPosts: IFeedback[]
 }

@@ -1,7 +1,7 @@
-import { FaqState, IFAQ } from './faq.types'
+import { IFaqState, IFAQ } from './faq.types'
 import { createSlice, PayloadAction } from '@reduxjs/toolkit'
 
-const initialState: FaqState = {
+const initialState: IFaqState = {
 	faqPosts: [
 		{
 			_id: '',
@@ -12,7 +12,7 @@ const initialState: FaqState = {
 	],
 }
 
-export const userSlice = createSlice({
+export const faqSlice = createSlice({
 	name: 'faq',
 	initialState,
 	reducers: {
@@ -31,7 +31,7 @@ export const userSlice = createSlice({
 	},
 })
 
-export default userSlice.reducer
+export default faqSlice.reducer
 
 // export const faqReducer = (state = initialState, action) => {
 // 	let index

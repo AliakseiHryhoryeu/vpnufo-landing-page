@@ -1,5 +1,4 @@
 import { configureStore } from '@reduxjs/toolkit'
-import { useDispatch } from 'react-redux'
 import { faqReducer } from './faq/faq.slice'
 import { feedbackReducer } from './feedback/feedback.slice'
 import { userReducer } from './user/user.slice'

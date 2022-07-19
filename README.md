@@ -2,8 +2,9 @@
 
 #### Frontend
 
-- ReactJS
-- Redux
+- NextJS
+- Redux, Redux Toolkit
+- Apollo
 - TypeScript
 - SCSS
 - Webpack
@@ -11,10 +12,10 @@
 
 #### Backend
 
-- ExpressJS
+- NestJS
+- GraphQL
 - MongoDB
-- JavaScript
-- NodeJS
+- TypeScript
 
 ## Figma
 
